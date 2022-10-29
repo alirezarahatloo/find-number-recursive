@@ -1,2 +1,2 @@
 # find-number-recursive
-how many number is there in a array?
+how many special number is there in a array?
