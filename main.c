@@ -5,7 +5,7 @@
 #define SIZE_ARRAY  20
 typedef unsigned char uint8_t;
 
-uint8_t count_one (uint8_t *arr,uint8_t i,uint8_t size)
+uint8_t count_number (uint8_t *arr,uint8_t i,uint8_t size)
 {
     uint8_t cnt = 0;
     if(i == size )
@@ -14,7 +14,7 @@ uint8_t count_one (uint8_t *arr,uint8_t i,uint8_t size)
     {
         cnt++;
     }
-    cnt += count_one(arr,i+1,size);
+    cnt += count_number(arr,i+1,size);
     return cnt;
 }
 
@@ -28,7 +28,7 @@ int main()
         printf("%d\n",array[i]);
     }
     uint8_t found = 0 ;
-    found = count_one(array,0,sizeof(array));
+    found = count_number(array,0,sizeof(array));
     printf("found nuber:%d\n",found);
 
     return 0;
